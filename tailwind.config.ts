@@ -41,9 +41,9 @@ const config: Config = {
         "login": "0 0 4px rgb(152,152,152)",
       },
       colors: {
-        primary: "#e64d00",
-        secondary: "#ff5500",
-        tertiary: "#ff661a",
+        primary: "#00ccff",
+        secondary: "#ff4da6",
+        tertiary: "#ffd11a",
         quaternary: "#ff884d",
         quinary: "#ff9966",
         strong : "#ffccb3",
@@ -51,9 +51,9 @@ const config: Config = {
         low : "#fffbfa"
       },
       textColor: {
-        primary: "#e64d00",
-        secondary: "#ff5500",
-        tertiary: "#ff661a",
+        primary: "#00ccff",
+        secondary: "#ff4da6",
+        tertiary: "#ffff00",
         quaternary: "#ff884d",
         quinary: "#ff9966",
         strong : "#ffccb3",
@@ -61,8 +61,8 @@ const config: Config = {
         low : "#fffbfa"
       },
       backgroundColor: {
-        primary: "#e64d00",
-        secondary: "#ff5500",
+        primary: "#00ccff",
+        secondary: "#00b8e6",
         tertiary: "#ff661a",
         quaternary: "#ff884d",
         quinary: "#ff9966",
@@ -71,8 +71,8 @@ const config: Config = {
         low : "#fffbfa"
       },
       outlineColor: {
-        primary: "#e64d00",
-        secondary: "#ff5500",
+        primary: "#00ccff",
+        secondary: "#ff4da6",
         tertiary: "#ff661a",
         quaternary: "#ff884d",
         quinary: "#ff9966",
@@ -108,8 +108,8 @@ const config: Config = {
         "2full": "200%",
       },
       borderColor: {
-        primary: "#e64d00",
-        secondary: "#ff5500",
+        primary: "#00ccff",
+        secondary: "#ff4da6",
         tertiary: "#ff661a",
         quaternary: "#ff884d",
         quinary: "#ff9966",

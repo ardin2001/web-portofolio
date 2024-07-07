@@ -32,14 +32,12 @@ export default async function Home() {
       </div>
       <div className="about bg-secondary mt-16 sm:mt-24 lg:mt-32 py-8 sm:py-14 lg:py-16">
         <div className="grid justify-centergap-10 w-85/100 md:h-4/5 lg:w-3/4 mx-auto">
-          <div className="banner grid sm:grid-cols-2 gap-8 sm:gap-0">
-            <div className="left grid">
-              <Image src="/profile-about.png" alt="profile-about" width={5000} height={5000} className="w-3/4 justify-self-start md:w-85/100 lg:w-1/2 rounded-lg -scale-x-100" />
-            </div>
+          <div className="banner grid sm:grid-cols-2 gap-8 sm:gap-10 justify-items-center">
+            <Image src="/profile-about.png" alt="profile-about" width={5000} height={5000} className="sm:w-90/100 md:w-3/4 lg:w-2/3 xl:w-1/2" />
             <div className="right self-center">
-              <div className="caption grid gap-2">
-                <h3 className="text-white text-3xl lg:text-5xl font-semibold">About Me</h3>
-                <p className="text-white">A recent graduate from the Information Technology department, Faculty of Computer Science at the
+              <div className="caption grid gap-1">
+                <h3 className="text-white text-3xl lg:text-5xl font-semibold"><span className="text-secondary font-bold">About</span> Me</h3>
+                <p className="text-tertiary text-justify">A recent graduate from the Information Technology department, Faculty of Computer Science at the
                   University of Jember with a GPA of 3.91. I have experience as a laboratory assistant, involvement in student
                   organizations, and working on several information system projects. I am interested in the fields of frontend
                   web development, backend development, and machine learning.</p>
