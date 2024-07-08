@@ -19,10 +19,10 @@ export default async function Home() {
         <div className="banner grid sm:grid-cols-2 gap-8 sm:gap-0 md:items-center">
           <div className="left">
             <div className="caption grid gap-2">
-              <h3 className="text-secondary text-3xl lg:text-5xl font-semibold mb-1 lg:mb-3">Hello, I&apos;am</h3>
-              <h3 className="text-white bg-secondary text-3xl py-1 px-1.5 sm:px-2 lg:p-2.5 lg:text-5xl font-bold w-max">Ardin Nugraha</h3>
-              <p className="">Check out my Curriculum Vitae in below.</p>
-              <Link href="/auth/login" className="py-1 bg-secondary rounded-lg text-white font-semibold w-min px-4 lg:px-5">Download</Link>
+              <h3 className="text-qbg-quaternary text-3xl lg:text-5xl font-semibold mb-1 lg:mb-3"><span className="text-tertiary">Hello,</span> <span className="text-quaternary">I&apos;am</span></h3>
+              <h3 className="text-white bg-primary text-3xl py-1 px-1.5 sm:px-2 lg:p-2.5 lg:text-5xl font-bold w-max">Ardin Nugraha</h3>
+              <p className="">Untuk melihat daftar riwayat hidup saya, anda dapat menekan tombol download dibawah ini.</p>
+              <Link href="/cv.pdf" className="py-1 bg-secondary rounded-lg font-semibold w-min px-4 lg:px-5">Download</Link>
             </div>
           </div>
           <div className="right grid self-center">
@@ -30,14 +30,14 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="about bg-secondary mt-16 sm:mt-24 lg:mt-32 py-8 sm:py-14 lg:py-16">
+      <div className="about bg-tertiary mt-16 sm:mt-24 lg:mt-32 xl:mt-36 py-8 sm:py-14 lg:py-16">
         <div className="grid justify-centergap-10 w-85/100 md:h-4/5 lg:w-3/4 mx-auto">
           <div className="banner grid sm:grid-cols-2 gap-8 sm:gap-10 justify-items-center">
             <Image src="/profile-about.png" alt="profile-about" width={5000} height={5000} className="sm:w-90/100 md:w-3/4 lg:w-2/3 xl:w-1/2" />
             <div className="right self-center">
               <div className="caption grid gap-1">
-                <h3 className="text-white text-3xl lg:text-5xl font-semibold"><span className="text-secondary font-bold">About</span> Me</h3>
-                <p className="text-tertiary text-justify">A recent graduate from the Information Technology department, Faculty of Computer Science at the
+                <h3 className="text-white text-3xl lg:text-5xl font-semibold"><span className="text-secondary font-bold">About</span> <span className="text-primary font-bold">Me</span></h3>
+                <p className="text-white text-justify">A recent graduate from the Information Technology department, Faculty of Computer Science at the
                   University of Jember with a GPA of 3.91. I have experience as a laboratory assistant, involvement in student
                   organizations, and working on several information system projects. I am interested in the fields of frontend
                   web development, backend development, and machine learning.</p>
@@ -46,8 +46,8 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="about my-16 grid gap-1 lg:gap-2 xl:gap-2.5 w-85/100 md:h-4/5 lg:w-3/4 mx-auto">
-        <h3 className="text-secondary text-center text-lg lg:text-xl font-semibold lg:font-bold">Tech Stack</h3>
+      <div className="about mt-16 sm:mt-24 lg:mt-32 xl:mt-36 grid gap-1 lg:gap-2 xl:gap-2.5 w-85/100 md:h-4/5 lg:w-3/4 mx-auto">
+        <h3 className="text-qbg-quaternary text-center text-xl lg:text-2xl font-semibold lg:font-bold"><span className="text-quaternary font-bold">Tech</span> <span className="text-tertiary font-bold">Stack</span></h3>
         <p className="text-center font-normal">Berikut merupakan beberapa tech stack yang pernah saya pelajari selama perkuliahan.</p>
         <div className="flex overflow-auto sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           <CardSkill image="/techstack/language.png" title="programming Language" desc="Javascript, Go, Python, C#, and PHP" />
@@ -57,17 +57,17 @@ export default async function Home() {
           <CardSkill image="/techstack/software.png" title="software" desc="Git, Adobe Photoshop, Figma, Word, and Excel" />
         </div>
       </div>
-      <div className="status mt-16 sm:mt-24 md:mt-32 lg:mt-36 xl:mt-44 text-white py-4 grid gap-1 lg:gap-2 xl:gap-2.5 w-85/100 md:h-4/5 lg:w-3/4 mx-auto bg-secondary">
-        <h3 className="text-center text-lg lg:text-xl font-semibold lg:font-bold">Pengalaman Project</h3>
-        <p className="text-center font-normal w-90/100 mx-auto">Berikut merupakan pengalaman project yang sudah saya kerjakan selama beberapa tahun terakhir.</p>
+      <div className="status mt-16 sm:mt-24 lg:mt-32 xl:mt-36 text-white py-4 grid gap-1 lg:gap-2 xl:gap-2.5 w-85/100 md:h-4/5 lg:w-3/4 mx-auto bg-secondary">
+        <h3 className="text-center text-lg lg:text-xl xl:text-2xl font-semibold lg:font-bold"><span className="text-tertiary font-bold">Pengalaman</span> <span className="text-quaternary font-bold">Project</span></h3>
+        <p className="text-center font-normal w-90/100 mx-auto text-black">Berikut merupakan pengalaman project yang sudah saya kerjakan selama beberapa tahun terakhir.</p>
         <div className="mt-2 lg:mt-2.5 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           <CardMarket value={4} caption="Project Frontend" />
           <CardMarket value={1} caption="Project backend" />
           <CardMarket value={2} caption="Project Fullstack" />
         </div>
       </div>
-      <div className="about my-16 grid gap-1 lg:gap-2 xl:gap-2.5 w-85/100 md:h-4/5 lg:w-3/4 mx-auto">
-        <h3 className="text-secondary text-center text-lg lg:text-xl font-semibold lg:font-bold">Project</h3>
+      <div className="about mt-16 sm:mt-24 lg:mt-32 xl:mt-36 grid gap-1 lg:gap-2 xl:gap-2.5 w-85/100 md:h-4/5 lg:w-3/4 mx-auto">
+        <h3 className="text-qbg-quaternary text-center text-lg lg:text-xl font-semibold lg:font-bold">Project</h3>
         <p className="text-center font-normal">Berikut merupakan pengalaman real project yang sudah saya kerjakan selama beberapa tahun terakhir.</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <CardProject image="/project/atr.png" title="ATR/BPN Jember" desc="Pada project ini saya berkesemapatan sebagai frontend web menggunakan React JS dan Tailwind CSS." />
@@ -79,27 +79,27 @@ export default async function Home() {
           <CardProject image="/project/pwa.png" title="Restaurant catalogue" desc="Project ini merupakan latihan untuk membuat website Progressive Web App (PWA) dan implementasi module bundler (Webpack)." />
         </div>
       </div>
-      <div className="maps grid gap-5 my-28 w-85/100 md:h-4/5 lg:w-3/4 mx-auto lg:grid-cols-2">
+      <div className="maps grid gap-5 mt-16 sm:mt-24 lg:mt-32 xl:mt-36 w-85/100 md:h-4/5 lg:w-3/4 mx-auto lg:grid-cols-2">
         <div className="caption grid gap-5 sm:gap-6 md:gap-7 lg:gap-8 lg:h-min">
           <div className="description">
-            <h3 className="text-secondary text-2xl font-semibold lg:font-bold">Tempat Tinggal</h3>
-            <p>Desa Madurejo, Kecamatan Pasirian, kabupaten Lumajang</p>
+            <h3 className="text-qbg-quaternary text-2xl font-semibold lg:font-bold"><span className="text-tertiary font-bold">Tempat</span> <span className="text-primary font-bold">Tinggal</span></h3>
+            <p className="">Desa Madurejo, Kecamatan Pasirian, kabupaten Lumajang</p>
           </div>
           <div className="contact">
             <div className="location grid gap-4">
               <div className="info">
                 <div className="flex gap-2 items-center">
-                  <PiBuildingOffice className="text-secondary text-3xl" />
-                  <h4 className="font-semibold text-lg">Soul Cafe</h4>
+                  <PiBuildingOffice className="text-quaternary text-3xl" />
+                  <h4 className="font-semibold text-lg">Alamat</h4>
                 </div>
                 <p className="ml-9"> Jln. Aseloley No.44 Lumajang</p>
               </div>
               <div className="telp flex gap-2 items-center">
-                <BsTelephone className="text-secondary text-2xl mr-1" />
+                <BsTelephone className="text-quaternary text-2xl mr-1" />
                 <p>08123456789</p>
               </div>
               <div className="info flex gap-2 items-center">
-                <MdOutlineLocalPostOffice className="text-secondary text-3xl" />
+                <MdOutlineLocalPostOffice className="text-quaternary text-3xl" />
                 <p>ardinnugraha2001@gmail.com</p>
               </div>
             </div>
@@ -109,7 +109,7 @@ export default async function Home() {
           <Maps />
         </div>
       </div>
-      <Theme classname="fixed bottom-2.5 right-2.5 grid place-content-center bg-secondary text-white drop-shadow-strong rounded-full p-2" />
+      <Theme classname="fixed bottom-2.5 right-2.5 grid place-content-center bg-quaternary text-white drop-shadow-strong rounded-full p-2" />
       <Footer />
     </main>
   );
