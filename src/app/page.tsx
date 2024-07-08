@@ -10,7 +10,9 @@ import Theme from "./components/Theme";
 import Footer from "./components/Footer";
 import CardSkill from "./components/CardSkill";
 import CardProject from "./components/CardProject";
+import Certificate from "./components/Certificate";
 
+const certificate_image = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 export default async function Home() {
   return (
     <main className="bg-low">
@@ -30,10 +32,10 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="about bg-tertiary mt-16 sm:mt-24 lg:mt-32 xl:mt-36 py-8 sm:py-14 lg:py-16">
+      <div className="about bg-tertiary mt-16 sm:mt-24 lg:mt-32 xl:mt-36 py-8 lg:py-5">
         <div className="grid justify-centergap-10 w-85/100 md:h-4/5 lg:w-3/4 mx-auto">
           <div className="banner grid sm:grid-cols-2 gap-8 sm:gap-10 justify-items-center">
-            <Image src="/profile-about.png" alt="profile-about" width={5000} height={5000} className="sm:w-90/100 md:w-3/4 lg:w-2/3 xl:w-1/2" />
+            <Image src="/profile-about.png" alt="profile-about" width={5000} height={5000} className="w-4/5 sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-2/5" />
             <div className="right self-center">
               <div className="caption grid gap-1">
                 <h3 className="text-white text-3xl lg:text-5xl font-semibold"><span className="text-secondary font-bold">About</span> <span className="text-primary font-bold">Me</span></h3>
@@ -57,9 +59,9 @@ export default async function Home() {
           <CardSkill image="/techstack/software.png" title="software" desc="Git, Adobe Photoshop, Figma, Word, and Excel" />
         </div>
       </div>
-      <div className="status mt-16 sm:mt-24 lg:mt-32 xl:mt-36 text-white py-4 grid gap-1 lg:gap-2 xl:gap-2.5 w-85/100 md:h-4/5 lg:w-3/4 mx-auto bg-secondary">
-        <h3 className="text-center text-lg lg:text-xl xl:text-2xl font-semibold lg:font-bold"><span className="text-tertiary font-bold">Pengalaman</span> <span className="text-quaternary font-bold">Project</span></h3>
-        <p className="text-center font-normal w-90/100 mx-auto text-black">Berikut merupakan pengalaman project yang sudah saya kerjakan selama beberapa tahun terakhir.</p>
+      <div className="status mt-16 sm:mt-24 lg:mt-32 xl:mt-36 text-white py-4 grid gap-1 lg:gap-2 xl:gap-2.5 w-85/100 md:h-4/5 lg:w-3/4 mx-auto bg-quaternary">
+        <h3 className="text-center text-lg lg:text-xl xl:text-2xl font-semibold lg:font-bold"><span className="text-secondary font-bold">Pengalaman</span> <span className="text-primary font-bold">Project</span></h3>
+        <p className="text-center font-normal w-90/100 mx-auto text-white">Berikut merupakan pengalaman project yang sudah saya kerjakan selama beberapa tahun terakhir.</p>
         <div className="mt-2 lg:mt-2.5 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           <CardMarket value={4} caption="Project Frontend" />
           <CardMarket value={1} caption="Project backend" />
@@ -67,7 +69,7 @@ export default async function Home() {
         </div>
       </div>
       <div className="about mt-16 sm:mt-24 lg:mt-32 xl:mt-36 grid gap-1 lg:gap-2 xl:gap-2.5 w-85/100 md:h-4/5 lg:w-3/4 mx-auto">
-        <h3 className="text-qbg-quaternary text-center text-lg lg:text-xl font-semibold lg:font-bold">Project</h3>
+        <h3 className="text-qbg-quaternary text-center text-xl lg:text-2xl font-semibold lg:font-bold"><span className="text-primary">Project</span></h3>
         <p className="text-center font-normal">Berikut merupakan pengalaman real project yang sudah saya kerjakan selama beberapa tahun terakhir.</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <CardProject image="/project/atr.png" title="ATR/BPN Jember" desc="Pada project ini saya berkesemapatan sebagai frontend web menggunakan React JS dan Tailwind CSS." />
@@ -77,6 +79,15 @@ export default async function Home() {
           <CardProject image="/project/ppl.jpg" title="E-Chest" desc="Project ini merupakan tugas akhir mata kuliah Pengembangan Perangkat Lunak (PPL). Dimana saya berposisi sebagai programmer dengan jobdesk membuat website menggunakan Express JS dan Bootstrap CSS." />
           <CardProject image="/project/skripsi.png" title="Website Skripsi" desc="Project ini merupakan project skripsi, dimana menggunakan framework flask, Tailwind CSS, dan machine learning." />
           <CardProject image="/project/pwa.png" title="Restaurant catalogue" desc="Project ini merupakan latihan untuk membuat website Progressive Web App (PWA) dan implementasi module bundler (Webpack)." />
+        </div>
+      </div>
+
+      <div className="certificate grid gap-4 lg:gap-6 mt-16 sm:mt-24 lg:mt-32 xl:mt-36 w-85/100 md:h-4/5 lg:w-3/4 mx-auto">
+        <h3 className="text-primary font-bold text-xl lg:text-2xl text-center">Sertifikat</h3>
+        <div className="grid grid-flow-col sm:grid-flow-row sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 overflow-auto sm:overflow-hidden gap-4">
+          {certificate_image.map((item: any) => (
+            <Certificate image={item} key={item} />
+          ))}
         </div>
       </div>
       <div className="maps grid gap-5 mt-16 sm:mt-24 lg:mt-32 xl:mt-36 w-85/100 md:h-4/5 lg:w-3/4 mx-auto lg:grid-cols-2">

@@ -13,10 +13,10 @@ export default function Navbar() {
             </div>
             <div className={`${status ? "block" : "hidden"} md:block url text-center`}>
                 <ul className="grid gap-5 md:gap-0 py-4 md:py-0 md:grid-flow-col md:justify-between">
-                    <li className="font-normal text-tertiary lg:font-medium xl:font-semibold text-sm hover:font-bold hover:text-primary hover:border-b-2 hover:border-primary cursor-pointer">Home</li>
-                    <li className="font-normal text-tertiary lg:font-medium xl:font-semibold text-sm hover:font-bold hover:text-primary hover:border-b-2 hover:border-primary cursor-pointer">About</li>
-                    <li className="font-normal text-tertiary lg:font-medium xl:font-semibold text-sm hover:font-bold hover:text-primary hover:border-b-2 hover:border-primary cursor-pointer">Info</li>
-                    <li className="font-normal text-tertiary lg:font-medium xl:font-semibold text-sm hover:font-bold hover:text-primary hover:border-b-2 hover:border-primary cursor-pointer">Contact</li>
+                    <li className="font-normal text-quaternary lg:font-medium xl:font-semibold text-sm hover:font-bold hover:text-primary hover:border-b-2 hover:border-primary cursor-pointer">Home</li>
+                    <li className="font-normal text-quaternary lg:font-medium xl:font-semibold text-sm hover:font-bold hover:text-primary hover:border-b-2 hover:border-primary cursor-pointer">About</li>
+                    <li className="font-normal text-quaternary lg:font-medium xl:font-semibold text-sm hover:font-bold hover:text-primary hover:border-b-2 hover:border-primary cursor-pointer">Info</li>
+                    <li className="font-normal text-quaternary lg:font-medium xl:font-semibold text-sm hover:font-bold hover:text-primary hover:border-b-2 hover:border-primary cursor-pointer">Contact</li>
                 </ul>
             </div>
         </div>

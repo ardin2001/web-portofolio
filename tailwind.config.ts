@@ -42,7 +42,7 @@ const config: Config = {
       },
       colors: {
         primary: "#FF0082",
-        secondary: "#ecdd00",
+        secondary: "#FFFD00",
         tertiary: "#00DA6B",
         quaternary: "#00A7FF",
         quinary: "#ff9966",
@@ -52,7 +52,7 @@ const config: Config = {
       },
       textColor: {
         primary: "#FF0082",
-        secondary: "#ecdd00",
+        secondary: "#FFFD00",
         tertiary: "#00DA6B",
         quaternary: "#00A7FF",
         quinary: "#ff9966",
@@ -62,7 +62,7 @@ const config: Config = {
       },
       backgroundColor: {
         primary: "#FF0082",
-        secondary: "#ecdd00",
+        secondary: "#FFFD00",
         tertiary: "#00DA6B",
         quaternary: "#00A7FF",
         quinary: "#ff9966",
@@ -72,7 +72,7 @@ const config: Config = {
       },
       outlineColor: {
         primary: "#FF0082",
-        secondary: "#ecdd00",
+        secondary: "#FFFD00",
         tertiary: "#00DA6B",
         quaternary: "#00A7FF",
         quinary: "#ff9966",
@@ -109,7 +109,7 @@ const config: Config = {
       },
       borderColor: {
         primary: "#FF0082",
-        secondary: "#ecdd00",
+        secondary: "#FFFD00",
         tertiary: "#00DA6B",
         quaternary: "#00A7FF",
         quinary: "#ff9966",

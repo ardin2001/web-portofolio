@@ -6,8 +6,8 @@ export default function CardMarket({ front, value, unit,caption }: any) {
     const [hasEnded, setHasEnded] = useState(false);
     return (
         <div className="card text-center">
-            <h2 className="text-7xl font-semibold mb-1.5 mx-auto text-primary">{front}<CountUp enableScrollSpy={!hasEnded} end={value} />{unit}</h2>
-            <h4 className="font-bold text-black">{caption}</h4>
+            <h2 className="text-7xl font-semibold mb-1.5 mx-auto text-secondary">{front}<CountUp enableScrollSpy={!hasEnded} end={value} />{unit}</h2>
+            <h4 className="font-bold text-white">{caption}</h4>
         </div>
     );
 }
