@@ -12,7 +12,16 @@ import CardSkill from "./components/CardSkill";
 import CardProject from "./components/CardProject";
 import Certificate from "./components/Certificate";
 
-const certificate_image = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+const project = [
+  {image : "/project/atr.png", link:"https://fe-dinas-pertanahan.vercel.app", title : "ATR/BPN Jember", desc:"Pada project ini saya berkesemapatan sebagai frontend web menggunakan React JS dan Tailwind CSS."}, 
+  {image : "/project/pemilu.png", link:"https://pemilu.himatifunej.org",title :"Pemilu HIMATIF", desc:"Pada project ini saya berkesemapatan sebagai frontend web menggunakan React JS dan Tailwind CSS."}, 
+  {image : "/project/soul.png",link:"https://soul-cafe.vercel.app", title : "Soul Cafe App", desc:"Project ini merupakan fake project fullstack dimana saya membuat website menggunakan Next JS, Tailwind CSS, Firebase dan state management menggunakan redux."}, 
+  {image : "/project/curhatin.png", link:"https://curahanhati.vercel.app", title : "Curhatin", desc:"Project ini merupakan tugas pada kelas dicoding pada saat program MSIB Batch 3. Project ini menggunakan React JS dan state management menggunakan redux."}, 
+  {image : "/project/ppl.jpg", link:"https://github.com/ardin2001/ppl_rev2", title : "E-Chest", desc:"Project ini merupakan tugas akhir mata kuliah Pengembangan Perangkat Lunak (PPL). Dimana saya berposisi sebagai programmer dengan jobdesk membuat website menggunakan Express JS dan Bootstrap CSS."}, 
+  {image : "/project/skripsi.png", link:"https://github.com/ardin2001/web-skripsi",title:"Website Skripsi", desc:"Project ini merupakan project skripsi, dimana menggunakan framework flask, Tailwind CSS, dan machine learning."}, 
+  {image : "/project/pwa.png",link:"https://github.com/ardin2001/web-skripsi", title : "Restaurant catalogue", desc : "Project ini merupakan latihan untuk membuat website Progressive Web App (PWA) dan implementasi module bundler (Webpack)."}
+];
+const certificate_image = [1, 2, 3, 4, 5, 6, 7,8,9,10,11,12];
 export default async function Home() {
   return (
     <main className="bg-low">
@@ -35,7 +44,7 @@ export default async function Home() {
       <div className="about bg-tertiary mt-16 sm:mt-24 lg:mt-32 xl:mt-36 py-8 lg:py-5">
         <div className="grid justify-centergap-10 w-85/100 md:h-4/5 lg:w-3/4 mx-auto">
           <div className="banner grid sm:grid-cols-2 gap-8 sm:gap-10 justify-items-center">
-            <Image src="/profile-about.png" alt="profile-about" width={5000} height={5000} className="w-4/5 sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-2/5" />
+            <Image src="/profile-about.png" alt="profile-about" width={5000} height={5000} className="w-2/6 sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-2/5" />
             <div className="right self-center">
               <div className="caption grid gap-1">
                 <h3 className="text-white text-3xl lg:text-5xl font-semibold"><span className="text-secondary font-bold">About</span> <span className="text-primary font-bold">Me</span></h3>
@@ -72,13 +81,9 @@ export default async function Home() {
         <h3 className="text-qbg-quaternary text-center text-xl lg:text-2xl font-semibold lg:font-bold"><span className="text-primary">Project</span></h3>
         <p className="text-center font-normal">Berikut merupakan pengalaman real project yang sudah saya kerjakan selama beberapa tahun terakhir.</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <CardProject image="/project/atr.png" title="ATR/BPN Jember" desc="Pada project ini saya berkesemapatan sebagai frontend web menggunakan React JS dan Tailwind CSS." />
-          <CardProject image="/project/pemilu.png" title="Pemilu HIMATIF" desc="Pada project ini saya berkesemapatan sebagai frontend web menggunakan React JS dan Tailwind CSS." />
-          <CardProject image="/project/soul.png" title="Soul Cafe App" desc="Project ini merupakan fake project fullstack dimana saya membuat website menggunakan Next JS, Tailwind CSS, Firebase dan state management menggunakan redux." />
-          <CardProject image="/project/curhatin.png" title="Curhatin" desc="Project ini merupakan tugas pada kelas dicoding pada saat program MSIB Batch 3. Project ini menggunakan React JS dan state management menggunakan redux." />
-          <CardProject image="/project/ppl.jpg" title="E-Chest" desc="Project ini merupakan tugas akhir mata kuliah Pengembangan Perangkat Lunak (PPL). Dimana saya berposisi sebagai programmer dengan jobdesk membuat website menggunakan Express JS dan Bootstrap CSS." />
-          <CardProject image="/project/skripsi.png" title="Website Skripsi" desc="Project ini merupakan project skripsi, dimana menggunakan framework flask, Tailwind CSS, dan machine learning." />
-          <CardProject image="/project/pwa.png" title="Restaurant catalogue" desc="Project ini merupakan latihan untuk membuat website Progressive Web App (PWA) dan implementasi module bundler (Webpack)." />
+          {project.map((item: any) => (
+            <CardProject image={item.image} key={item.image} link={item.link} desc={item.desc} title={item.title} />
+          ))}
         </div>
       </div>
 
